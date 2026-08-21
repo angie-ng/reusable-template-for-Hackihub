@@ -1,10 +1,6 @@
-name: Personal Reusable Template
-
-on:
-  workflow_call:
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Hello from a personal-account template."
+spec:
+  inputs: {}
+---
+github-hosted-template-job:
+  script:
+    - echo "Hello from a GitLab template file hosted on GitHub."
